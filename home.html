@@ -3,56 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinephile</title>
+    <title>GoGlobe</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
+<header>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="natlogo.png"  width="30" height="24" class="d-inline-block align-text-top">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#"><img src="natlogo.png"  width="30" height="24" class="d-inline-block align-text-top">GoGlobe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item1">
+                        <a class="nav-link active" aria-current="page" href="#accordionExample" style="color: antiquewhite;">Destinations</a>
+                    </li>
+                    <li class="nav-item1">
+                        <a class="nav-link active" href="#pricingSection" style="color: antiquewhite;">Pricing</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active carousel-img-size">
-            <img src="image.png" class="d-block w-100 " alt="nature1">
-          </div>
-          <div class="carousel-item">
-            <img src="image2.png" class="d-block w-100" alt="nature2">
-          </div>
-          <div class="carousel-item">
-            <img src="image3.png" class="d-block w-100" alt="nature3">
-          </div>
+            <div class="carousel-item active carousel-img-size">
+                <img src="image.png" class="d-block w-100 " alt="nature1">
+            </div>
+            <div class="carousel-item">
+                <img src="image2.png" class="d-block w-100" alt="nature2">
+            </div>
+            <div class="carousel-item">
+                <img src="image3.png" class="d-block w-100" alt="nature3">
+            </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
-      </div>
-    </header>
+    </div>
+</header>
+
+<div class="acc">
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Explore Destinations
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Discover our wide range of destinations, from exotic beaches to bustling cities. Whether you're craving an adventure in the mountains or a relaxing getaway by the sea, we have something for every traveler.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Plan Your Trip
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Plan your dream vacation with ease. Our expert travel guides provide insider tips on the best attractions, accommodations, and activities to make your trip unforgettable. From itinerary suggestions to packing essentials, we've got you covered
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Book Your Experience
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Ready to turn your travel dreams into reality? Browse our selection of tours, activities, and accommodations to find the perfect fit for your next adventure. With easy booking and flexible options, booking your dream vacation has never been easier.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="pricingSection">
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="images-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="images-2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="images-3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
